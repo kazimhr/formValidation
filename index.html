@@ -8,33 +8,19 @@
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 
-    <link rel="stylesheet" src='styles.css'>
+    <link rel="stylesheet" href='styles.css'>
 
     <script src="index.js"></script>
 </head>
 <body>
-    
-    <!-- <form class = "form-inline" role = "form">
-        <div class = "form-group">
-           <label class = "sr-only" for = "name">Full Name</label>
-           <input type = "text" class = "form-control" id = "name" placeholder = "Enter Full Name">
-        </div>
-        <div class = "form-group">
-           <label class = "sr-only" for = "inputfile">File input</label>
-           <input type = "file" id = "inputfile">
-        </div>
-        <div class = "checkbox">
-           <label><input type = "checkbox"> Check me out</label>
-        </div>
-        <button type = "submit" class = "btn btn-default">Submit</button>
-     </form> -->
 
      <div style="margin-top: 100px;">
 
      </div>
      <div class="container">
-        <form class = "form" role = "form">         
+        <form class = "form" role = "form" onsubmit="">         
         <table class="table table-striped">
           <thead>
             <tr>
@@ -51,82 +37,84 @@
             <tr>
               <td>
                   <div class="checkbox">
-                    <label><input type="checkbox" name="optradio" checked><input type="text" size="4">£</label>
+                    <label><input id="estate-checkbox-flat" type="checkbox" name="optcheckbox" checked><input id="estate-text-flat" type="number" size="4" min="0">£</label>
                   </div>
               </td>
               <td>
-                <div class="radio">
-                  <label><input type="checkbox" name="optradio" checked><input type="text" size="4">£</label>
+                <div class="checkbox">
+                  <label><input id="six-checkbox-flat" type="checkbox" name="optcheckbox" checked><input id="six-text-flat" type="number" size="4" min="0">£</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">£</label>
+                <div class="checkbox">
+                  <label><input id="7-checkbox-flat" type="checkbox" name="optcheckbox" checked><input id="7-text-flat" type="number" size="4" min="0">£</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">£</label>
+                <div class="checkbox">
+                  <label><input id="8-checkbox-flat" type="checkbox" name="optcheckbox" checked><input id="8-text-flat" type="number" size="4" min="0">£</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">£</label>
+                <div class="checkbox">
+                  <label><input id="9-checkbox-flat" type="checkbox" name="optcheckbox" checked><input id="9-text-flat" type="number" size="4" min="0">£</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">£</label>
+                <div class="checkbox">
+                  <label><input id="14-checkbox-flat" type="checkbox" name="optcheckbox" checked><input id="14-text-flat" type="number" size="4" min="0">£</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">£</label>
+                <div class="checkbox">
+                  <label><input id="16-checkbox-flat" type="checkbox" name="optcheckbox" checked><input id="16-text-flat" type="number" size="4" min="0">£</label>
                 </div>
             </td>
               
             </tr>
             <tr>
               <td>
-                  <div class="radio">
-                    <label><input type="checkbox" name="optradio" checked><input type="text" size="4">%</label>
+                  <div class="checkbox">
+                    <label><input id="estate-checkbox-per" type="checkbox" name="optcheckbox" ><input id="estate-text-per" type="number" size="4" max="100" min="0" disabled>%</label>
                   </div>
               </td>
               <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">%</label>
+                <div class="checkbox">
+                  <label><input id="six-checkbox-per" type="checkbox" name="optcheckbox" ><input id="six-text-per" type="number" size="4" max="100" min="0" disabled>%</label>
                 </div>
               </td>
               <td>
-               <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">%</label>
+               <div class="checkbox">
+                  <label><input id="7-checkbox-per" type="checkbox" name="optcheckbox" ><input id="7-text-per" type="number" size="4" max="100" min="0" disabled>%</label>
                </div>
               </td>
               <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">%</label>
+                <div class="checkbox">
+                  <label><input id="8-checkbox-per" type="checkbox" name="optcheckbox" ><input id="8-text-per" type="number" size="4" max="100" min="0" disabled>%</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">%</label>
+                <div class="checkbox">
+                  <label><input id="9-checkbox-per" type="checkbox" name="optcheckbox" ><input id="9-text-per" type="number" size="4" max="100" min="0" disabled>%</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">%</label>
+                <div class="checkbox">
+                  <label><input id="14-checkbox-per" type="checkbox" name="optcheckbox" ><input id="14-text-per" type="number" size="4" max="100" min="0" disabled>%</label>
                 </div>
             </td>
             <td>
-                <div class="radio">
-                  <label><input type="radio" name="optradio" checked><input type="text" size="4">%</label>
+                <div class="checkbox">
+                  <label><input id="16-checkbox-per" type="checkbox" name="optcheckbox" ><input id="16-text-per" type="number" size="4" max="100" min="0" disabled>%</label>
                 </div>
             </td>
               
             </tr>
           </tbody>
         </table>
-    </form>   
+        <button type="submit" class="btn btn-default">Submit</button>  
+    </form>
+     
       </div>
 
 </body>
